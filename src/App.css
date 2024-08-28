@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-family: "Montserrat", sans-serif;
+}
+:root {
+	--accent: #4985ff;
+	--dark: #323232;
+	--grey: #999;
+	--light-grey: #e0e0e0;
+}
+.container{
+    max-width: 1145px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.button {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
+    background: var(--accent);
+    color: #fff;
+    padding: 15px 36px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}

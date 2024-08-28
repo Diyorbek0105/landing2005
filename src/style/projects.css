@@ -1,0 +1,73 @@
+.projects {
+    background: #f6f6f8;
+    padding: 100px 0 130px;
+    margin-top: 482px;
+}
+
+.projects_list h4 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 146%;
+    text-align: center;
+    color: #000;
+}
+
+.projects_list p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 158%;
+    text-align: center;
+    color: var(--grey);
+    width: 75%;
+    margin: 50px auto 70px;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ProCard img {
+    width: 100%;
+    height: 25vh;
+}
+
+@media (width <=700px) {
+    .projects {
+        margin-top: 892px;
+    }
+
+    .ProCard img {
+        height: 20vh;
+    }
+}
+
+@media (width <=700px) {
+    .projects {
+        margin-top: 702px;
+    }
+
+    .ProCard img {
+        height: 20vh;
+    }
+
+    .projects_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (width <=500px) {
+
+    .ProCard img {
+        height: 18vh;
+    }
+
+    .projects_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

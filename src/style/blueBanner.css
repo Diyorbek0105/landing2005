@@ -1,0 +1,134 @@
+.blueBanner {
+    position: relative;
+    background: linear-gradient(90deg, #504dc2 0%, #5f12d0 100%);
+    padding: 100px 0;
+    height: 60vh;
+}
+
+.blueBanner_Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blueBanner_Wrapper h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 146%;
+    color: #fff;
+    width: 70%;
+}
+
+.blueBanner_Wrapper button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
+    background: var(--accent);
+    border: none;
+    border-radius: 30px;
+    padding: 1.5% 4%;
+}
+
+.blueBanner_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin-top: 150px;
+}
+
+.blueBanner_card img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.blueBanner_card h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    margin: 30px 0;
+}
+
+.blueBanner_card p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 158%;
+    color: var(--grey);
+    width: 100%;
+    height: 12vh;
+    margin-bottom: 30%;
+}
+
+.blueBanner_card a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--accent);
+}
+
+@media (width <=800px) {
+    .blueBanner_Wrapper h2 {
+        font-size: 32px;
+    }
+    .blueBanner_card h4 {
+        font-size: 15px;
+    }
+
+    .blueBanner_card p {
+        font-size: 13px;
+    }
+    .blueBanner_card a {
+        font-size: 14px;
+    }
+    .blueBanner_card img {
+        height: 25vh;
+    } 
+}
+@media (width <=700px) {
+    .blueBanner_Wrapper {
+        display: block;
+    }
+    .blueBanner_Wrapper h2 {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .blueBanner_Wrapper button {
+        display: block;
+        margin: 0 auto;
+    }
+    .blueBanner_grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 80px;
+    }
+    .blueBanner_card h4 {
+        font-size: 14px;
+    }
+
+    .blueBanner_card p {
+        font-size: 11px;
+    }
+    .blueBanner_card a {
+        font-size: 13px;
+    }
+}
+
+@media (width <=670px) {
+    .blueBanner_Wrapper h2 {
+        font-size: 17px;
+    }
+    .blueBanner_card img {
+        height: 20vh;
+    } 
+    .blueBanner_card p {
+        font-size: 10px;
+    }
+}
